@@ -12,7 +12,7 @@
     </div>
 
     <h2>Greetings from development team in Vilnius!</h2>
-    <img src="../assets/raudonikiai.jpg" alt="" style="width: 100%">
+    <img src="../assets/raudonikiai.jpg" alt="">
     <p>
       2018 has been an exciting year with you.
       We have built cool stuff that is going to be used daily by our ever-growing customer base.
@@ -40,6 +40,11 @@
 
   $ease--out-quad: cubic-bezier(.25,.46,.450,.94);
 
+  img {
+    width: 90%;
+    max-width: 800px;
+  }
+
   .greeting {
     overflow: hidden;
   }
@@ -48,7 +53,7 @@
     position: absolute;
     overflow: hidden;
     height: 100vh;
-    width: 100vw;
+    width: calc(100vw - 20px);
     top: 0;
     left: 0;
   }

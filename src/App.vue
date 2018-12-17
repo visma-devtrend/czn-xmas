@@ -43,6 +43,7 @@
     font-family: "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     text-align: center;
     color: white;
+    margin: 0;
   }
 
   p {

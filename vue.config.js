@@ -1,3 +1,4 @@
 module.exports = {
-  baseUrl: '/czn-xmas'
+  baseUrl: '/czn-xmas',
+  outputDir: 'docs'
 };

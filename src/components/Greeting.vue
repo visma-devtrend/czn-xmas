@@ -12,6 +12,7 @@
     </div>
 
     <h2>Greetings from development team in Vilnius!</h2>
+    <img src="../assets/raudonikiai.jpg" alt="" style="width: 100%">
     <p>
       2018 has been an exciting year with you.
       We have built cool stuff that is going to be used daily by our ever-growing customer base.

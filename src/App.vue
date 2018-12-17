@@ -7,10 +7,10 @@
 </template>
 
 <script lang="ts">
-  import { Component, Vue } from 'vue-property-decorator';
-  import Animals from './components/Animals.vue';
-  import Greeting from './components/Greeting.vue';
-  import EventBus from '@/EventBus';
+  import { Component, Vue } from "vue-property-decorator";
+  import Animals from "./components/Animals.vue";
+  import Greeting from "./components/Greeting.vue";
+  import EventBus from "@/EventBus";
 
   @Component({
     components: {
@@ -22,13 +22,16 @@
     private showGreeting = false;
 
     public mounted() {
-      EventBus.$on('greeting-found', () => {
-        setTimeout(() => this.showGreeting = true, 500);
+      EventBus.$on("greeting-found", () => {
+        setTimeout(() => {
+          new Audio('jingle-bells.wav').play();
+          this.showGreeting = true
+        }, 500);
       });
     }
 
     private message() {
-      return this.showGreeting ? 'Hoooray!' : `Where's the greeting?`;
+      return this.showGreeting ? "Hoooray!" : `Where's the greeting?`;
     }
   }
 </script>

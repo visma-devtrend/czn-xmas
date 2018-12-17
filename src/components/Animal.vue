@@ -35,8 +35,11 @@
       this.isOpen = !this.isOpen;
 
       if (this.animal !== 'pig') {
+        new Audio('snort.wav').play();
         return;
       }
+
+      new Audio('pigsnort.wav').play();
 
       EventBus.$emit('greeting-found');
     }
